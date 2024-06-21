@@ -12,10 +12,13 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5000/login", {
-        userId,
-        password,
-      });
+      const response = await axios.post(
+        "https://task1-backend-chi.vercel.app/login",
+        {
+          userId,
+          password,
+        }
+      );
       setMessage(response.data.message);
     } catch (error) {
       setMessage(error.response.data.message);
