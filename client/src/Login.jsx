@@ -23,7 +23,7 @@ const Login = () => {
   };
 
   return (
-    <div className="flex mx-auto justify-center shadow-2xl overflow-x-hidden lg:mb-10">
+    <div className="flex lg:h-auto h-screen mx-auto justify-center shadow-2xl overflow-x-hidden lg:mb-10">
       <div className="hidden lg:block text-center lg:w-[60%] w-full lg:p-20 bg-gradient-to-r from-red-500 to-purple-500 ">
         <h1 className="text-7xl text-white font-semibold mt-40 text-left">
           Welcome to Website
