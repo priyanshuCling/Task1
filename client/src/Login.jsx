@@ -21,7 +21,11 @@ const Login = () => {
       );
       setMessage(response.data.message);
     } catch (error) {
-      setMessage(error.response.data.message);
+      if (error.response && error.response.data) {
+        setMessage(error.response.data.message);
+      } else {
+        setMessage("An error occurred. Please try again.");
+      }
     }
   };
 
